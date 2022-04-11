@@ -26,6 +26,12 @@ async function run() {
         }        
     });
     let json = await payload.json();
-    
+    $datosUsuario = payload.json.companyName;
+
     console.dir(json);
+    console.dir(json.companyName);
+    document.write( json.companyName + " " + json.department + " " + json.displayName + " " + "u01" + json.employeeId );
+    console.dir(json.companyName);
+
+
 };
